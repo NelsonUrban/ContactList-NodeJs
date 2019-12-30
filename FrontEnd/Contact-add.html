@@ -1,0 +1,33 @@
+<htm>
+
+    <head>
+        <LINK REL=StyleSheet HREF="add.css" TYPE="text/css" MEDIA=screen>
+            <LINK REL=StyleSheet HREF="/font-awesome.min.css" TYPE="text/css" MEDIA=screen>
+                <LINK REL=https://fontawesome.com/license/free TYPE="text/css" MEDIA=screen>
+    </head>
+
+    <body>
+        <form action="http://localhost:8090/contact" method="POST">
+
+            <div class="container">
+                <h1><a href="./Index.html"><i class="fa fa-home" aria-hidden="true"> </i></a> Add Contact</h1> 
+                <hr>
+                <label for="Nombre"><b>Nombre</b></label>
+                <input type="text" placeholder="Enter Nombre" name="Nombre" required>
+
+                <label for="telefono"><b>Telefono</b></label>
+                <input type="text" placeholder="Enter No Phone" name="telefono" required>
+
+
+                <label for="Email"><b>Email</b></label>
+                <input type="text" placeholder="Enter No Phone" name="Email">
+                <hr>
+                <button type="submit" class="registerbtn" href="./Index.html">Register</button>
+            </div>
+            <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+            <script src="./js/main.js"></script>
+            <script src="./js/services.js"></script>
+        
+        </form>
+    </body>
+</htm>

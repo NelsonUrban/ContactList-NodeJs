@@ -1,0 +1,47 @@
+<htm>
+
+    <head>
+        <LINK REL=StyleSheet HREF="add.css" TYPE="text/css" MEDIA=screen>
+            <LINK REL=StyleSheet HREF="/font-awesome.min.css" TYPE="text/css" MEDIA=screen>
+                <LINK REL=https://fontawesome.com/license/free TYPE="text/css" MEDIA=screen>
+    </head>
+
+    <body>
+        <form action="action_page.php">
+
+            <div class="container">
+                <h1>Details Contact</h1>
+                <hr>
+                <label for="Nombre"><b>Nombre</b></label>
+                <input type="text" placeholder="Enter Nombre"  id ="Nombre" name="Nombre"  disabled>
+
+                <label for="telefono"><b>Telefono</b></label>
+                <input type="text" placeholder="Enter No Phone" id="telefono" name="telefono" disabled>
+
+                <label for="Email"><b>Email</b></label>
+                <input type="text" placeholder="Enter No Phone"  id ="Email" name="Email" disabled>
+                <hr>
+                <button type="button" class="registerbtn" ><a href="./Index.html"><i class="fa fa-home" aria-hidden="true"> </i></a>volver al Home</button>     
+               
+
+            </div>
+            <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+            <script src="./js/main.js"></script>
+            <script src="./js/services.js"></script>
+            <script>
+               // var array =[1];
+                document.addEventListener('DOMContentLoaded', async() =>{
+                        const params = new URLSearchParams(document.location.search)                    
+                        const id = params.get('id')
+                        const data = await getContactByID(id); 
+                                    $("#Nombre").val(data.Nombre);
+                                    $("#telefono").val(data.telefono);
+                                    $("#Email").val(data.Email);
+
+                      
+                })
+            </script>
+        
+        </form>
+    </body>
+</htm>

@@ -1,0 +1,41 @@
+<htm>
+
+    <head>
+        <LINK REL=StyleSheet HREF="add.css" TYPE="text/css" MEDIA=screen>
+    </head>
+
+    <body>
+        <form action="http://localhost:8090/contact" method="PUT">
+               
+            <div class="container">
+                    <!-- <input type="text"  id="id" name="id" hidden> -->
+                <h1>Edit Contact</h1>
+                <hr>
+                <label for="Nombre"><b>Nombre</b></label>
+                <input type="text" placeholder="Enter Nombre" id="Nombre" name="Nombre" required>
+
+                <label for="telefono"><b>Telefono</b></label>
+                <input type="text" placeholder="Enter No Phone" id="telefono" name="telefono" required>
+
+                <label for="Email"><b>Email</b></label>
+                <input type="text" placeholder="Enter No Phone"  id="email" name="Email">
+                <hr>    
+                <button type="submit" class="registerbtn">Saves Changes</button>       
+            </div>
+
+            <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+            <script src="./js/main.js"></script>
+            <script src="./js/services.js"></script>
+            <script>
+                    document.addEventListener('DOMContentLoaded', async() =>{
+                        const params = new URLSearchParams(document.location.search)                    
+                        const id = params.get('id')
+                        const data = await getContactByID(id); 
+                                    $("#Nombre").val(data.Nombre);
+                                    $("#telefono").val(data.telefono);
+                                    $("#Email").val(data.Email);    
+                })        
+            </script>
+        </form>
+    </body>
+</htm>

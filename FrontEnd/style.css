@@ -1,0 +1,156 @@
+.contact-container {
+  width: 300px;
+  height: 600px;
+  border: solid darkblue 1px;
+  border-radius: 5px;
+  background: white;
+}
+
+.button {
+  margin: 1px;
+  padding: 1px;
+  background-color: rgb(78, 78, 247);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.openbtn {
+  width: 300px;
+  border-radius: 4px;
+}
+
+.title-container {
+  margin-top: 5px;
+  margin-left: 5px;
+  flex-direction: 1px;
+  align-items: center;
+}
+
+body {
+  background-color: #222;
+  ;
+}
+
+.list-contact {
+  list-style-type: none;
+  padding: 0;
+}
+
+.list-contact .fa {
+  font-size: 1.5em;
+  margin-right: 8px;
+  
+}
+
+.list-contact .fa-check-circle {
+  color: rgb(105,178,83	)
+}
+
+.list-contact li {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ededed;
+}
+
+.list-contact li span {
+  flex: 1
+}
+
+.list-contact li .fa-close {
+  color: rgb(184,58,53	)
+}
+
+.search-container {
+  /* display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  border-color: black 0.5px;
+  width: 300px; */
+   display: flex;
+   object-fit: cover;
+    object-position: center center;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    -webkit-border-radius: 50%;
+    image-rendering: pixelated;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    border-end-end-radius: solid black;
+ 
+
+}
+.container-profile{
+  display: flex;
+  flex: 1;
+  margin-left: 5px;
+
+}
+.container-profile p
+{
+   text-decoration: none;
+   color: black;
+
+}
+.searchTxt {
+  border-radius: 4px;
+  width: 250px;
+  height: 25px;
+  justify-items: center;
+  border-color: darkblue;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.sidepanel {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  height: 250px;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidepanel a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidepanel a:hover {
+  color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
